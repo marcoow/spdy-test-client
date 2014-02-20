@@ -1,0 +1,10 @@
+PODS:
+  - CocoaSPDY (1.0.0)
+
+DEPENDENCIES:
+  - CocoaSPDY
+
+SPEC CHECKSUMS:
+  CocoaSPDY: e4bc94d4e255d8e11c9c4eb1ab60d79b8e9ad329
+
+COCOAPODS: 0.29.0
