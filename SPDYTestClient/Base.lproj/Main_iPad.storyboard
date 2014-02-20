@@ -29,14 +29,14 @@
                                     <action selector="makeSPDYRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xgf-6s-Ecr"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="fdsfdsf" translatesAutoresizingMaskIntoConstraints="NO" id="l29-Vh-yv9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l29-Vh-yv9">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="994"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1mu-lP-Deg">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1mu-lP-Deg">
                                 <rect key="frame" x="374" y="487" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
@@ -55,8 +55,9 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="activityIndicatorView" destination="1mu-lP-Deg" id="ynX-xJ-TeY"/>
-                        <outlet property="textView" destination="l29-Vh-yv9" id="1cl-Qd-JaP"/>
+                        <outlet property="_activityIndicatorView" destination="1mu-lP-Deg" id="NAi-Rc-wkU"/>
+                        <outlet property="_button" destination="L4i-it-Phd" id="a1D-wr-S2Q"/>
+                        <outlet property="_textView" destination="l29-Vh-yv9" id="WPz-nG-aNU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

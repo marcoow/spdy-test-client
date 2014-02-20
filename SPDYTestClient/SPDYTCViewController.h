@@ -1,7 +1,10 @@
-@interface SPDYTCViewController : UIViewController {
+@interface SPDYTCViewController : UIViewController<NSURLConnectionDelegate> {
 
-	IBOutlet UITextView*							textView;
-	IBOutlet UIActivityIndicatorView* activityIndicatorView;
+	NSMutableData* _responseData;
+	
+	IBOutlet UITextView*							_textView;
+	IBOutlet UIActivityIndicatorView* _activityIndicatorView;
+	IBOutlet UIButton*                _button;
 
 }
 
