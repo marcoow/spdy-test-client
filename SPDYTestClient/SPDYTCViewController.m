@@ -8,7 +8,8 @@
 @implementation SPDYTCViewController
 
 - (void)viewDidLoad {
-	[SPDYURLConnectionProtocol registerOrigin:@"https://spdy-test-server"];
+	[SPDYURLConnectionProtocol registerOrigin:@"http://spdy-test-server:8081"];
+	[SPDYConfiguration defaultConfiguration].enableSettingsMinorVersion = NO;
 	[_activityIndicatorView stopAnimating];
 }
 
@@ -17,7 +18,7 @@
 	_button.enabled = NO;
 	[_activityIndicatorView startAnimating];
 
-	NSURLRequest*		 request    = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://spdy-test-server/api"]];
+	NSURLRequest*		 request    = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://spdy-test-server:8081/api"]];
 	NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	[connection start];
 }
